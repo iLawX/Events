@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Manager</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Events Manager Application</h1>
+    <div class="container">
+      <div class="add-events">
+        <h2>Add Event</h2>
+        <div class="row">
+          <i class="fa-solid fa-pen-to-square"></i>
+          <input type="text" class="event-name" placeholder="Event Name" />
+        </div>
+        <div class="row">
+          <i class="fa-solid fa-address-book"></i>
+          <input
+            type="text"
+            class="event-organizer"
+            placeholder="Event Organizer"
+          />
+        </div>
+        <div class="row">
+          <i class="fa-solid fa-calendar-days"></i>
+          <input type="datetime-local" class="event-date" />
+        </div>
+        <button class="add-event" onclick="addEvent()">Add Event</button>
+      </div>
+      <div class="events"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
